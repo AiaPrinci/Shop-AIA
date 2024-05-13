@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothes Shop | AIA</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="burger-onclick" id="burger-onclick">
+        <div class="burger-onclick-menu">
+            <ul class="burger-onclick-list">
+                <a href="./index.html">
+                    <li class="burger-onclick-li" id="burger-onclick-li">
+                        Main
+                    </li>
+                </a>
+                <li class="burger-onclick-li" id="burger-onclick-li-categories">
+                    Categories
+                    <span class="burger-onclick-categories-span" id="burger-onclick-categories-span">+</span>
+                                <ul id="burger-onclick-in-ul-container">
+                                    <a href="#clothes-section">
+                                        <li class="inner-list" id="burger-onclick-clothes">Clothes</li>
+                                    </a>
+                                    <li class="inner-list" id="burger-onclick-shoes">Shoes</li>
+                                    <li class="inner-list" id="burger-onclick-accessories">Accessories</li>
+                                </ul>
+                </li>
+                <a href="#about">
+                    <li class="burger-onclick-li" id="burger-onclick-li-about">
+                        About
+                    </li>
+                </a>
+                <li class="burger-onclick-li" id="burger-onclick-li-help">
+                    Help
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="scroll-container">
+        <a href="#header" class="scroll" id="scroll">
+            <?xml version="1.0" encoding="iso-8859-1"?>
+            <svg fill="#fff" height="32px" width="32px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve">
+                <path id="XMLID_224_" d="M325.606,229.393l-150.004-150C172.79,76.58,168.974,75,164.996,75c-3.979,0-7.794,1.581-10.607,4.394
+                l-149.996,150c-5.858,5.858-5.858,15.355,0,21.213c5.857,5.857,15.355,5.858,21.213,0l139.39-139.393l139.397,139.393
+                C307.322,253.536,311.161,255,315,255c3.839,0,7.678-1.464,10.607-4.394C331.464,244.748,331.464,235.251,325.606,229.393z"/>
+            </svg>
+        </a>
+    </div>
+    <div class="more-info-clothes" id="more-info-clothes">
+        <div class="more-info-clothes-main-content" id="more-info-clothes-main-content">
+            <div class="more-info-header">
+                <svg id="x" xmlns="http://www.w3.org/2000/svg" width="14" height="14" id="x"><g fill="none" fill-rule="evenodd" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M13 1 1 13M1 1l12 12"></path></g></svg>
+            </div>
+            <div class="more-info-main">
+                <div class="main-info-box">
+                    <ul class="main-info-list">
+                        <li class="inner-box" id="list-box-1"></li>
+                        <li class="inner-box" id="list-box-2"></li>
+                        <li class="inner-box" id="list-box-3"></li>
+                        <li class="inner-box" id="list-box-4"></li>
+                    </ul>
+                </div>
+                <div class="main-info-text-container" id="main-info-text-container">
+                    <div class="main-info-text-container-header" id="main-info-text-container-header">
+                        <p id="shirt-type">
+                            Shirt Type:
+                        </p>
+                        <p id="new-type">
+                            New:
+                        </p>
+                        <p id="price">
+                            Price:
+                        </p>
+                        <p id="color">
+                            Color:
+                        </p>
+                    </div>
+                    <div class="button-container">
+                        <button class="buy-btn">
+                            Buy
+                        </button>
+                    </div>
+                    <div class="main-info-image-container">
+                        <div class="main-info-image">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="parent">
+        <div class="box"></div>
+    </div>
+    <div class="body-container">
+        <header class="header" id="header">
+            <div class="header-container">
+                <div class="left-side">
+                    <a href="./index.html">
+                        <div class="img">
+                            
+                        </div>
+                    </a>
+                    <nav>
+                        <ul id="list-container">
+                            <a href="./index.html">
+                                <li class="li-element" id="main-id">
+                                    Main
+                                </li>
+                            </a>
+                            <li class="li-element" id="categories-id">
+                                Categories
+                                <span class="span" id="categories-span">+</span>
+                                <ul id="in-ul-container">
+                                    <a href="#clothes-section">
+                                        <li id="clothes">Clothes</li>
+                                    </a>
+                                    <li id="shoes">Shoes</li>
+                                    <li id="accessories">Accessories</li>
+                                </ul>
+                            </li>
+                            <a href="#about">
+                                <li class="li-element" id="about-id">About</li>
+                            </a>
+                            <li class="li-element" id="help-id">Help</li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="registration">
+                    <div class="login"> 
+                        <a href="#">
+                            LOGIN
+                        </a>
+                        <span>|</span>
+                        <a href="#">
+                            SIGNUP
+                        </a>
+                    </div>
+                    <button class="shop">SHOP</button>
+                </div>
+                <div class="burger-menu" onclick="myFunction()">
+                    <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                    <svg id="burger" width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 18L20 18" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M4 12L20 12" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M4 6L20 6" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="header-text">
+                <h1>SHOP AIA</h1>
+            </div>
+        </header>
+        <main>
+            <section>
+                <div class="about" id="about">
+                    <div class="about-text-container">
+                        <h1 class="about-header">About</h1>
+                    </div>
+                    <div class="about-container">
+                        <div class="about-grid">
+                            <div class="grid-box" id="first-box">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1221.95399345274!2d42.67570335975658!3d42.26871853865321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x405c8cbe3458b0f9%3A0x36b789f9535df080!2zN005Rys5OVgsIOGDpeGDo-GDl-GDkOGDmOGDoeGDmA!5e0!3m2!1ska!2sge!4v1715425169567!5m2!1ska!2sge" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                            <div class="grid-box" id="second-box">
+                                <div class="gradient-div"></div>
+                                <p>Our Main Branch</p>
+                                <img id="image-main" src="./Images/Picture a sleek 785a126a-f75b-4283-aa31-7040fad2f67b.png" alt="">
+                            </div>
+                            <div class="grid-box" id="third-box">
+                                <div class="gradient-div"></div>
+                                <p>Our Second Branch</p>
+                                <img id="image-second" src="./Images/Picture a sleek 7b55583c-1d4d-4e64-b951-3ee9252fa333.png" alt="">
+                            </div>
+                        </div>
+                        <div class="employee-container">
+                            <div class="employee-text">
+                                <h1>Employees</h1>
+                            </div>
+                            <div class="employees">
+                                <div class="friends-container">
+                                    <div class="btn-container" id="btn-container-1">
+                                        <div class="img-header-container">
+                                            <img src="./Images/Dataa.jpg" alt="">
+                                            <h1>Data</h1>
+                                        </div>
+                                        <a href="https://www.facebook.com/TavartqiladzeDavit" target="_blank">
+                                            <button class="btn" id="btn-1">Click For Info</button>
+                                        </a>
+                                    </div>
+                                    <div class="btn-container" id="btn-container-2">
+                                        <div class="img-header-container">
+                                            <img src="./Images/giorga.jpg" alt="">
+                                            <h1>Giorga</h1>
+                                        </div>
+                                        <a href="https://www.facebook.com/giorgi.urushadze.395?locale=ka_GE" target="_blank">
+                                            <button class="btn" id="btn-2">Click For Info</button>
+                                        </a>
+                                    </div>
+                                    <div class="btn-container" id="btn-container-3">
+                                        <div class="img-header-container">
+                                            <img src="./Images/MIshaa.jpg" alt="">
+                                            <h1>Misha</h1>
+                                        </div>
+                                        <a href="https://www.instagram.com/alpaidze_m?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                                            <button class="btn" id="btn-3">Click For Info</button>
+                                        </a>
+                                    </div>
+                                    <div class="btn-container" id="btn-container-4">
+                                        <div class="img-header-container">
+                                            <img src="./Images/dudu.jpg" alt="">
+                                            <h1>Dudu</h1>
+                                        </div>
+                                        <a href="https://www.facebook.com/profile.php?id=100003623779556&locale=ka_GE" target="_blank">
+                                            <button class="btn" id="btn-4">Click For Info</button>
+                                        </a>
+                                    </div>
+                                    <div class="btn-container" id="btn-container-5">
+                                        <div class="img-header-container">
+                                            <img src="./Images/vania.png" alt="">
+                                            <h1>Vania</h1>
+                                        </div>
+                                        <a href="https://www.facebook.com/profile.php?id=100006195966569&locale=ka_GE" target="_blank">
+                                            <button class="btn" id="btn-5">Click For Info</button>
+                                        </a>
+                                    </div>
+                                    <div class="btn-container" id="btn-container-6">
+                                        <div class="img-header-container">
+                                            <img src="./Images/lasha.jpg" alt="">
+                                            <h1>Lasha</h1>
+                                        </div>
+                                        <a href="https://www.facebook.com/profile.php?id=100026028107250&locale=ka_GE" target="_blank">
+                                            <button class="btn" id="btn-6">Click For Info</button>
+                                        </a>
+                                    </div>
+                                    <div class="btn-container" id="btn-container-7">
+                                        <div class="img-header-container">
+                                            <img src="./Images/vato.png.jpg" alt=""> 
+                                            <h1>Vato</h1>
+                                        </div>
+                                        <a href="https://www.facebook.com/vatuunaa?locale=ka_GE" target="_blank">
+                                            <button class="btn" id="btn-7">Click For Info</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </section>
+            <section>
+                <div class="clothes" id="clothes-section">
+                    <div class="clothes-text">
+                        <h1>Clothes</h1>
+                    </div>
+                    <div class="box-container">
+                        <div class="clothes-container">
+                            <div class="main-content">
+                                <div class="clothe-pic" id="clothe-pic">
+                                    <h1>Cool Shirt</h1>
+                                    <div class="gradient-div" id="clothes-gradient"></div>
+                                </div>
+                                <div class="clothe-list" id="clothe-list">
+                                    <div class="clothe-pic-list" id="box-1">
+                                        
+                                    </div>
+                                    <div class="clothe-pic-list" id="box-2">
+    
+                                    </div>
+                                    <div class="clothe-pic-list" id="box-3">
+    
+                                    </div>
+                                    <div class="clothe-pic-list" id="box-4">
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="more-info-container" id="more-info-container">
+                            <div class="more-info" id="more-info">
+                                More Info
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
