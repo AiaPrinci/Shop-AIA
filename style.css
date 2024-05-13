@@ -787,15 +787,16 @@ body {
 }
 
 @media only screen and (max-width: 769px), (max-width: 1024px) {
-
-
-
     .parent {
         display: none;
     }
 
     .scroll {
         display: none;
+    }
+
+    .header {
+        height: 100vh;
     }
     
     .header-container {
@@ -805,7 +806,8 @@ body {
     }   
 
     .header-text h1 {
-        font-size: 100px;
+        height: 100%;
+        font-size: 40px;
         text-align: center;
     }
 
@@ -833,6 +835,7 @@ body {
 
     .about-container {
         height: 3000px;
+        width: 100%;
         flex-direction: column;
         align-items: center;
     }
