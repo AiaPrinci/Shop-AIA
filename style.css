@@ -699,10 +699,13 @@ body {
     height: 150px;
     border-radius: 4px;
     cursor: pointer;
+    transition: all 0.3s;
 }
 
 .inner-box:hover {
     box-shadow: 5px 5px 20px #000;
+    position: relative;
+    bottom: 10px;
 }
 
 #list-box-1 {
