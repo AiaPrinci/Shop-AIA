@@ -169,9 +169,6 @@ listBox2.addEventListener('mouseover', () => {
      newType.innerHTML += shopItems[1].new;
      price.innerHTML += shopItems[1].price;
      color.innerHTML += shopItems[1].color;
-     mainInfoImageBox.style.backgroundImage = 'url(./Images/white1.png)';
-     mainInfoImageBox.style.backgroundSize = 'cover';
-     mainInfoImageBox.style.backgroundPosition = 'center';
 })
 
 listBox2.addEventListener('mouseout', () => {
