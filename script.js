@@ -223,7 +223,12 @@ categoriesOnclick.addEventListener('mouseleave', () => {
      burgerOnclickSpan.innerHTML = '+';
 });
 
-categoriesOnclick.addEventListener('click', () => {
-     burgerOnclickList.style.display = 'flex';
-     burgerOnclickSpan.innerHTML = '-';
-});
+// categoriesOnclick.addEventListener('click', () => {
+//      burgerOnclickList.style.display = 'flex';
+//      burgerOnclickSpan.innerHTML = '-';
+// });
+
+// categoriesOnclick.addEventListener('click', () => {
+//      burgerOnclickList.style.display = 'none';
+//      burgerOnclickSpan.innerHTML = '+';
+// })
