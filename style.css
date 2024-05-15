@@ -708,6 +708,10 @@ body {
     bottom: 10px;
 }
 
+.inner-box:active {
+    bottom: 0px;
+}
+
 #list-box-1 {
     background-image: url('./Images/blackshirt.png');
     background-size: cover;
