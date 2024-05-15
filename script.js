@@ -61,9 +61,18 @@ liFor.forEach((item) => {
 
 let sideElement = document.querySelector('.box');
 
-sideElement.addEventListener('click', () => {
+const animation = () => {
+     sideElement.style.opacity = '0.0';
+     sideElement.style.transition = 'all 0.3s';
+}
+
+setTimeout(() => {
+     animation();
+}, 4500);
+
+setTimeout(() => {
      sideElement.remove();
-})
+}, 5000);
 
 let clothePic = document.getElementById('clothe-pic');
 let box1 = document.getElementById('box-1');
@@ -71,31 +80,31 @@ let box2 = document.getElementById('box-2');
 let box3 = document.getElementById('box-3');
 let box4 = document.getElementById('box-4');
 
-box1.addEventListener('mouseover', () => {
-     clothePic.style.backgroundImage = 'url(./Images/blackshirt.png)';
-});
+// box1.addEventListener('mouseover', () => {
+//      clothePic.style.backgroundImage = 'url(./Images/blackshirt.png)';
+// });
 
-box2.addEventListener('mouseover', () => {
-     clothePic.style.backgroundImage = 'url(./Images/white.png)';
-     clothePic.style.backgroundSize = 'cover';
-     clothePic.style.backgroundPosition = 'center';
-});
+// box2.addEventListener('mouseover', () => {
+//      clothePic.style.backgroundImage = 'url(./Images/white.png)';
+//      clothePic.style.backgroundSize = 'cover';
+//      clothePic.style.backgroundPosition = 'center';
+// });
 
-box3.addEventListener('mouseover', () => {
-     clothePic.style.backgroundImage = 'url(./Images/whiteshirt.png)';
-     clothePic.style.backgroundSize = 'cover';
-     clothePic.style.backgroundPosition = 'center';
-});
+// box3.addEventListener('mouseover', () => {
+//      clothePic.style.backgroundImage = 'url(./Images/whiteshirt.png)';
+//      clothePic.style.backgroundSize = 'cover';
+//      clothePic.style.backgroundPosition = 'center';
+// });
 
-box4.addEventListener('mouseover', () => {
-     clothePic.style.backgroundImage = 'url(./Images/white1.png)';
-     clothePic.style.backgroundSize = 'cover';
-     clothePic.style.backgroundPosition = 'center';
-});
+// box4.addEventListener('mouseover', () => {
+//      clothePic.style.backgroundImage = 'url(./Images/white1.png)';
+//      clothePic.style.backgroundSize = 'cover';
+//      clothePic.style.backgroundPosition = 'center';
+// });
 
 let moreInfoClothesBtn = document.getElementById('more-info');
 let moreInfoClothes = document.getElementById('more-info-clothes');
-moreInfoClothes.style.display = 'none';
+// moreInfoClothes.style.display = 'none';
 let moreInfoClothesMainContent = document.getElementById('more-info-clothes-main-content');
 let x = document.getElementById('x');
 
@@ -103,108 +112,89 @@ moreInfoClothesBtn.addEventListener('click', () => {
      moreInfoClothes.style.display = 'flex';
 });
 
-x.addEventListener('click', () => {
-     moreInfoClothes.style.display = 'none';
-})
+// x.addEventListener('click', () => {
+//      moreInfoClothes.style.display = 'none';
+// })
 
 let burger = document.getElementById('burger');
 let burgerOnclick = document.getElementById('burger-onclick');
+let burgerMenu = document.getElementById('burger-menu');
 
 const myFunction = () => { 
      burgerOnclick.style.display = (burgerOnclick.style.display == "flex") ? "none" : "flex";
 }
 
-let shopItems = [{
-     whatIsIt:'CoolBlackShirt',
-     new: true,
-     price: '200$',
-     color: 'black',
-     image: 'Images\blackshirt.png'},
-     {whatIsIt:'CoolWhiteShirt',
-     new: true,
-     price: '200$',
-     color: 'white',
-     image: 'Images\whiteshirt.png'
-     },
-     {whatIsIt:'CoolWhiteShirt(with no painting)',
-     new: true,
-     price: '150$',
-     color: 'white',
-     image: 'Images\white.png'},
-     {whatIsIt:'CoolestWhiteShirt',
-     new: true,
-     price: '300$',
-     color: 'White',
-     image: 'Images\white1.png'}]
-;
-let listBox1 = document.getElementById('list-box-1');
-let listBox2 = document.getElementById('list-box-2');
-let listBox3 = document.getElementById('list-box-3');
-let listBox4 = document.getElementById('list-box-4');
-
-
-let shirtType = document.getElementById('shirt-type');
-let newType = document.getElementById('new-type');
-let price = document.getElementById('price');
-let color = document.getElementById('color');
-
-let mainInfoImageBox = document.getElementById('main-info-image-box')
-
-listBox1.addEventListener('mouseover', () => {
-     shirtType.innerHTML += shopItems[0].whatIsIt;
-     newType.innerHTML += shopItems[0].new;
-     price.innerHTML += shopItems[0].price;
-     color.innerHTML += shopItems[0].color;
+burgerMenu.addEventListener('click', () => {
+     myFunction();
 })
+// let listBox1 = document.getElementById('list-box-1');
+// let listBox2 = document.getElementById('list-box-2');
+// let listBox3 = document.getElementById('list-box-3');
+// let listBox4 = document.getElementById('list-box-4');
 
-listBox1.addEventListener('mouseout', () => {
-     shirtType.innerHTML = `Shirt Type:  `;
-     newType.innerHTML = 'New:  ';
-     price.innerHTML = 'Price:  ';
-     color.innerHTML = 'Color:  '
-})
 
-listBox2.addEventListener('mouseover', () => {
-     shirtType.innerHTML += shopItems[1].whatIsIt;
-     newType.innerHTML += shopItems[1].new;
-     price.innerHTML += shopItems[1].price;
-     color.innerHTML += shopItems[1].color;
-})
+// let shirtType = document.getElementById('shirt-type');
+// let newType = document.getElementById('new-type');
+// let price = document.getElementById('price');
+// let color = document.getElementById('color');
 
-listBox2.addEventListener('mouseout', () => {
-     shirtType.innerHTML = `Shirt Type:  `;
-     newType.innerHTML = 'New:  ';
-     price.innerHTML = 'Price:  ';
-     color.innerHTML = 'Color:  '
-})
+// let mainInfoImageBox = document.getElementById('main-info-image-box')
 
-listBox3.addEventListener('mouseover', () => {
-     shirtType.innerHTML += shopItems[2].whatIsIt;
-     newType.innerHTML += shopItems[2].new;
-     price.innerHTML += shopItems[2].price;
-     color.innerHTML += shopItems[2].color;
-})
+// listBox1.addEventListener('mouseover', () => {
+//      shirtType.innerHTML += shopItems[0].whatIsIt;
+//      newType.innerHTML += shopItems[0].new;
+//      price.innerHTML += shopItems[0].price;
+//      color.innerHTML += shopItems[0].color;
+// })
 
-listBox3.addEventListener('mouseout', () => {
-     shirtType.innerHTML = `Shirt Type:  `;
-     newType.innerHTML = 'New:  ';
-     price.innerHTML = 'Price:  ';
-     color.innerHTML = 'Color:  '
-})
+// listBox1.addEventListener('mouseout', () => {
+//      shirtType.innerHTML = `Shirt Type:  `;
+//      newType.innerHTML = 'New:  ';
+//      price.innerHTML = 'Price:  ';
+//      color.innerHTML = 'Color:  '
+// })
 
-listBox4.addEventListener('mouseover', () => {
-     shirtType.innerHTML += shopItems[3].whatIsIt;
-     newType.innerHTML += shopItems[3].new;
-     price.innerHTML += shopItems[3].price;
-     color.innerHTML += shopItems[3].color;
-})
+// listBox2.addEventListener('mouseover', () => {
+//      shirtType.innerHTML += shopItems[1].whatIsIt;
+//      newType.innerHTML += shopItems[1].new;
+//      price.innerHTML += shopItems[1].price;
+//      color.innerHTML += shopItems[1].color;
+// })
 
-listBox4.addEventListener('mouseout', () => {
-     shirtType.innerHTML = `Shirt Type:  `;
-     newType.innerHTML = 'New:  ';
-     price.innerHTML = 'Price:  ';
-     color.innerHTML = 'Color:  '
-})
+// listBox2.addEventListener('mouseout', () => {
+//      shirtType.innerHTML = `Shirt Type:  `;
+//      newType.innerHTML = 'New:  ';
+//      price.innerHTML = 'Price:  ';
+//      color.innerHTML = 'Color:  '
+// })
+
+// listBox3.addEventListener('mouseover', () => {
+//      shirtType.innerHTML += shopItems[2].whatIsIt;
+//      newType.innerHTML += shopItems[2].new;
+//      price.innerHTML += shopItems[2].price;
+//      color.innerHTML += shopItems[2].color;
+// })
+
+// listBox3.addEventListener('mouseout', () => {
+//      shirtType.innerHTML = `Shirt Type:  `;
+//      newType.innerHTML = 'New:  ';
+//      price.innerHTML = 'Price:  ';
+//      color.innerHTML = 'Color:  '
+// })
+
+// listBox4.addEventListener('mouseover', () => {
+//      shirtType.innerHTML += shopItems[3].whatIsIt;
+//      newType.innerHTML += shopItems[3].new;
+//      price.innerHTML += shopItems[3].price;
+//      color.innerHTML += shopItems[3].color;
+// })
+
+// listBox4.addEventListener('mouseout', () => {
+//      shirtType.innerHTML = `Shirt Type:  `;
+//      newType.innerHTML = 'New:  ';
+//      price.innerHTML = 'Price:  ';
+//      color.innerHTML = 'Color:  '
+// })
 
 let categoriesOnclick = document.getElementById('burger-onclick-li-categories');
 let burgerOnclickSpan = document.getElementById('burger-onclick-categories-span');
@@ -232,3 +222,48 @@ categoriesOnclick.addEventListener('mouseleave', () => {
 //      burgerOnclickList.style.display = 'none';
 //      burgerOnclickSpan.innerHTML = '+';
 // })
+
+let clothesBoxEd = document.querySelector('#clothes-box-1');
+let imageBox = document.getElementById('image-box-1');
+
+clothesBoxEd.addEventListener('mouseover', () => {
+     imageBox.style.scale = '1.1';
+});
+
+clothesBoxEd.addEventListener('mouseleave', () => {
+     imageBox.style.scale = '1';
+})
+
+let shopItems = [{
+     whatIsIt:'Cool T-Shirt',
+     new: true,
+     price: '200$',
+     color: 'Blue and White',
+     image: 'Images\blackshirt.png'},
+     {whatIsIt:'CoolWhiteShirt',
+     new: true,
+     price: '200$',
+     color: 'white',
+     image: 'Images\whiteshirt.png'
+     },
+     {whatIsIt:'CoolWhiteShirt(with no painting)',
+     new: true,
+     price: '150$',
+     color: 'white',
+     image: 'Images\white.png'},
+     {whatIsIt:'CoolestWhiteShirt',
+     new: true,
+     price: '300$',
+     color: 'White',
+     image: 'Images\white1.png'}]
+;
+
+let shirtType = document.getElementById('shirt-type');
+let newType = document.getElementById('new-type');
+let price = document.getElementById('price');
+let color = document.getElementById('color');
+
+shirtType.innerHTML += shopItems[0].whatIsIt;
+newType.innerHTML += shopItems[0].new;
+price.innerHTML += shopItems[0].price;
+color.innerHTML += shopItems[0].color;

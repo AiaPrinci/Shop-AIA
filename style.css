@@ -57,15 +57,14 @@
 }
 
 .box {
-    width: 430px;
-    height: 400px;
+    width: 330px;
+    height: 300px;
     background-image: url('./Images/Screenshot\ \(208\).png');
     background-size: cover;
     background-position: center;
     position: fixed;
     z-index: 999;
-    cursor: pointer;
-    filter: drop-shadow(5px 5px 20px #000)
+    filter: drop-shadow(5px 5px 20px #000);
 }
 
 ::selection {
@@ -197,6 +196,10 @@ body {
     width: 150px;
     height: 150px;
     background-color: rgba(88, 87, 87, 0.711);
+}
+
+#in-ul-container li {
+    cursor: pointer;
 }
 
 #in-ul-container li:hover {
@@ -501,7 +504,6 @@ body {
 .box-container {
     width: 100%;
     height: 100%;
-    /* background-color: #000; */
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -509,19 +511,95 @@ body {
 }
 
 .clothes-container {
-    width: 1400px;
+    width: 100%;
     height: 800px;
     background-color: #ffffff9f;
     backdrop-filter: blur(8px);
-    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-content {
-    width: 1400px;
+    width: 100%;
     height: 800px;
     padding: 20px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.clothes-box {
+    width: 1080px;
+    height: 600px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.2s;
+    cursor: pointer;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.clothes-box:hover {
+    position: relative;
+    transform: translateY(-2%);
+    box-shadow: 0px 10px 35px #000;
+}
+
+.image-box {
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    transition: all 0.3s;
+}
+
+#image-box-1 {
+    background-image: url('./Images/t-shirt-blue.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.image-container {
+    width: 100%;
+    height: 45%;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.box-text-container {
+    width: 100%;
+    height: 55%;
+    background-image: url('./Images/4f3fb3b\ \(1\).png');
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    font-family: Hitmarker;
+    letter-spacing: 1px;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.box-text-container button {
+    width: 50%;
+    height: 50px;
+    background-color: #eeff00;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: #000000;
+    font-family: Hitmarker;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 5px#eeff00;
+}
+
+.box-text-container button:hover {
+    outline: 1px solid #4d4d4d;
+    outline-offset: 4px;
 }
 
 .clothe-pic {
@@ -984,16 +1062,6 @@ body {
         align-items: center;
     }
 
-    .main-content {
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-    }
-
-    .clothes-container {
-        width: 90%;
-    }
-
     .clothe-list {
         flex-direction: row;
         align-items: center;
@@ -1010,6 +1078,10 @@ body {
     .clothe-pic {
         width: 90%;
         background-position: center;
+    }
+
+    .clothes-text h1 {
+        font-size: 60px;
     }
 
     #clothes-gradient {
