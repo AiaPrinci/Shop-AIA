@@ -805,8 +805,13 @@ body {
         z-index: 999999999999999999999999999999999999;
     }   
 
+    .header-text {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+
     .header-text h1 {
-        height: 100%;
         font-size: 40px;
         text-align: center;
     }
