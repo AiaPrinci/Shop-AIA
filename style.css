@@ -777,36 +777,36 @@ body {
     height: 150px;
     border-radius: 4px;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: all 0.2s;
 }
 
 .inner-box:hover {
-    box-shadow: 5px 5px 20px #000;
-    position: relative;
-    bottom: 10px;
+    box-shadow: 0px 5px 10px #000;
+    transform: translateY(-2%);
 }
 
 .inner-box:active {
-    bottom: 0px;
+    box-shadow: 0px 0px 0px;
+    transform: translateY(0%);
 }
 
 #list-box-1 {
-    background-image: url('./Images/blackshirt.png');
+    background-image: url('./Images/wears.png');
     background-size: cover;
 }
 
 #list-box-2 {
-    background-image: url('./Images/white1.png');
+    background-image: url('./Images/wears1.png');
     background-size: cover;
 }
 
 #list-box-3 {
-    background-image: url('./Images/white.png');
+    background-image: url('./Images/wears2.png');
     background-size: cover;
 }
 
 #list-box-4 {
-    background-image: url('./Images/whiteshirt.png');
+    background-image: url('./Images/opala.png');
     background-size: cover;
 }
 
@@ -831,6 +831,7 @@ body {
     font-family: Hitmarker;
     font-size: 30px;
     letter-spacing: 1px;
+    color: #fff;
 }
 
 .buy-btn {
@@ -872,6 +873,12 @@ body {
 }
 
 @media only screen and (max-width: 769px), (max-width: 1024px) {
+
+    .image-box {
+        height: 100%;
+        width: 100%;
+    }
+
     .parent {
         display: none;
     }

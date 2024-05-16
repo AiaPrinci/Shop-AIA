@@ -102,20 +102,6 @@ let box4 = document.getElementById('box-4');
 //      clothePic.style.backgroundPosition = 'center';
 // });
 
-let moreInfoClothesBtn = document.getElementById('more-info');
-let moreInfoClothes = document.getElementById('more-info-clothes');
-// moreInfoClothes.style.display = 'none';
-let moreInfoClothesMainContent = document.getElementById('more-info-clothes-main-content');
-let x = document.getElementById('x');
-
-moreInfoClothesBtn.addEventListener('click', () => {
-     moreInfoClothes.style.display = 'flex';
-});
-
-// x.addEventListener('click', () => {
-//      moreInfoClothes.style.display = 'none';
-// })
-
 let burger = document.getElementById('burger');
 let burgerOnclick = document.getElementById('burger-onclick');
 let burgerMenu = document.getElementById('burger-menu');
@@ -226,8 +212,22 @@ categoriesOnclick.addEventListener('mouseleave', () => {
 let clothesBoxEd = document.querySelector('#clothes-box-1');
 let imageBox = document.getElementById('image-box-1');
 
+let moreInfoClothesBtn = document.getElementById('more-info');
+let moreInfoClothes = document.getElementById('more-info-clothes');
+moreInfoClothes.style.display = 'none';
+let moreInfoClothesMainContent = document.getElementById('more-info-clothes-main-content');
+let x = document.getElementById('x');
+
+clothesBoxEd.addEventListener('click', () => {
+     moreInfoClothes.style.display = 'flex';
+});
+
+x.addEventListener('click', () => {
+     moreInfoClothes.style.display = 'none';
+})
+
 clothesBoxEd.addEventListener('mouseover', () => {
-     imageBox.style.scale = '1.1';
+     imageBox.style.scale = '1.15';
 });
 
 clothesBoxEd.addEventListener('mouseleave', () => {
@@ -263,7 +263,12 @@ let newType = document.getElementById('new-type');
 let price = document.getElementById('price');
 let color = document.getElementById('color');
 
-shirtType.innerHTML += shopItems[0].whatIsIt;
-newType.innerHTML += shopItems[0].new;
-price.innerHTML += shopItems[0].price;
-color.innerHTML += shopItems[0].color;
+let shirtType1 = document.getElementById('shirt-type-1');
+let newType2 = document.getElementById('new-type-2');
+let price3 = document.getElementById('price-3');
+let color4 = document.getElementById('color-4');
+
+shirtType1.innerHTML += shopItems[0].whatIsIt;
+newType2.innerHTML += shopItems[0].new;
+price3.innerHTML += shopItems[0].price;
+color4.innerHTML += shopItems[0].color;
