@@ -814,6 +814,26 @@ body {
     background-size: cover;
 }
 
+#list-box-1-1 {
+    background-image: url('./Images/blackiShirt.png');
+    background-size: cover;
+}
+
+#list-box-2-2 {
+    background-image: url('./Images/blackoshirt.png');
+    background-size: cover;
+}
+
+#list-box-3-3 {
+    background-image: url('./Images/blackShirtMan.png');
+    background-size: cover;
+}
+
+#list-box-4-4 {
+    background-image: url('./Images/blacksShirt.png');
+    background-size: cover;
+}
+
 .main-info-text-container {
     width: 100%;
     height: 100%;

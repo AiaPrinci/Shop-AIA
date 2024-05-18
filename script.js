@@ -216,16 +216,27 @@ let clothesBox2 = document.getElementById('clothes-box-2');
 
 let moreInfoClothesBtn = document.getElementById('more-info');
 let moreInfoClothes = document.getElementById('more-info-clothes');
+let moreInfoClothes2 = document.getElementById('more-info-clothes-1');
+moreInfoClothes2.style.display = 'none';
 moreInfoClothes.style.display = 'none';
 let moreInfoClothesMainContent = document.getElementById('more-info-clothes-main-content');
 let x = document.getElementById('x');
+let x1 = document.getElementById('x-1');
 
 clothesBoxEd.addEventListener('click', () => {
      moreInfoClothes.style.display = 'flex';
 });
 
+clothesBox2.addEventListener('click', () => {
+     moreInfoClothes2.style.display = 'flex';
+})
+
 x.addEventListener('click', () => {
      moreInfoClothes.style.display = 'none';
+})
+
+x1.addEventListener('click', () => {
+     moreInfoClothes2.style.display = 'none';
 })
 
 clothesBoxEd.addEventListener('mouseover', () => {
