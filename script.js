@@ -211,6 +211,8 @@ categoriesOnclick.addEventListener('mouseleave', () => {
 
 let clothesBoxEd = document.querySelector('#clothes-box-1');
 let imageBox = document.getElementById('image-box-1');
+let imageBox2 = document.getElementById('image-box-2');
+let clothesBox2 = document.getElementById('clothes-box-2');
 
 let moreInfoClothesBtn = document.getElementById('more-info');
 let moreInfoClothes = document.getElementById('more-info-clothes');
@@ -234,16 +236,24 @@ clothesBoxEd.addEventListener('mouseleave', () => {
      imageBox.style.scale = '1';
 })
 
+clothesBox2.addEventListener('mouseenter', () => {
+     imageBox2.style.scale = '1.15';
+})
+
+clothesBox2.addEventListener('mouseleave', () => {
+     imageBox2.style.scale = '1';
+})
+
 let shopItems = [{
      whatIsIt:'Cool T-Shirt',
      new: true,
      price: '200$',
      color: 'Blue and White',
      image: 'Images\blackshirt.png'},
-     {whatIsIt:'CoolWhiteShirt',
+     {whatIsIt:'CoolBlackShirt',
      new: true,
-     price: '200$',
-     color: 'white',
+     price: '300$',
+     color: 'black',
      image: 'Images\whiteshirt.png'
      },
      {whatIsIt:'CoolWhiteShirt(with no painting)',
@@ -258,11 +268,6 @@ let shopItems = [{
      image: 'Images\white1.png'}]
 ;
 
-let shirtType = document.getElementById('shirt-type');
-let newType = document.getElementById('new-type');
-let price = document.getElementById('price');
-let color = document.getElementById('color');
-
 let shirtType1 = document.getElementById('shirt-type-1');
 let newType2 = document.getElementById('new-type-2');
 let price3 = document.getElementById('price-3');
@@ -272,3 +277,13 @@ shirtType1.innerHTML += shopItems[0].whatIsIt;
 newType2.innerHTML += shopItems[0].new;
 price3.innerHTML += shopItems[0].price;
 color4.innerHTML += shopItems[0].color;
+
+let shirtTypeBlack = document.getElementById('shirt-type-1-black');
+let newTypeBlack = document.getElementById('new-type-2-black');
+let priceBlack = document.getElementById('price-3-black');
+let colorBlack = document.getElementById('color-4-black');
+
+shirtTypeBlack.innerHTML += shopItems[1].whatIsIt;
+newTypeBlack.innerHTML += shopItems[1].new;
+priceBlack.innerHTML += shopItems[1].price;
+colorBlack.innerHTML += shopItems[1].color;

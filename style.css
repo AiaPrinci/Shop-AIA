@@ -538,14 +538,12 @@ body {
     flex-direction: column;
     transition: all 0.2s;
     cursor: pointer;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
 }
 
 .clothes-box:hover {
     position: relative;
     transform: translateY(-2%);
-    box-shadow: 0px 10px 35px #000;
+    box-shadow: 0px 10px 15px #000;
 }
 
 .image-box {
@@ -557,6 +555,12 @@ body {
 
 #image-box-1 {
     background-image: url('./Images/t-shirt-blue.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#image-box-2 {
+    background-image: url('./Images/outerBlackshirt.png');
     background-size: cover;
     background-position: center;
 }
@@ -573,7 +577,6 @@ body {
     height: 55%;
     background-image: url('./Images/4f3fb3b\ \(1\).png');
     background-size: cover;
-    border-radius: 10px;
     display: flex;
     font-family: Hitmarker;
     letter-spacing: 1px;
@@ -728,11 +731,12 @@ body {
 .more-info-clothes-main-content {
     width: 700px;
     height: 700px;
-    background-color: #ffffff;
+    background-color: rgba(36, 1, 68, 0.853);
     border-radius: 10px;
     border-style: solid;
     border-width: 2px;
-    border-color: #000;
+    border-color: #ffffff;
+    animation: boxBounce .95s both;
 }
 
 .more-info-header {
@@ -742,7 +746,7 @@ body {
     display: flex;
     justify-content: right;
     align-items: center;
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid #ffffff;
 }
 
 .more-info-header svg {
@@ -781,7 +785,7 @@ body {
 }
 
 .inner-box:hover {
-    box-shadow: 0px 5px 10px #000;
+    box-shadow: 0px 5px 10px #ffffff;
     transform: translateY(-2%);
 }
 
@@ -870,6 +874,39 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+@keyframes boxBounce {
+    0%,20%,40%,60%,80%,to {
+        animation-timing-function: cubic-bezier(.215,.61,.355,1);
+    }
+
+    0% {
+        opacity: 0;
+        transform: scale3d(.3,.3,.3);
+    }
+
+    20% {
+        transform: scale3d(1.1,1.1,1.1);
+    }
+
+    40% {
+        transform: scale3d(.9,.9,.9);
+    }
+
+    60% {
+        opacity: 1;
+        transform: scale3d(1.03,1.03,1.03);
+    }
+
+    80% {
+        transform: scale3d(.97,.97,.97);
+    }
+
+    to {
+        opacity: 1;
+        transform: scaleZ(1);
+    }
 }
 
 @media only screen and (max-width: 769px), (max-width: 1024px) {
