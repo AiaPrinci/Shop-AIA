@@ -785,13 +785,13 @@ body {
 }
 
 .inner-box:hover {
-    box-shadow: 0px 5px 10px #ffffff;
-    transform: translateY(-2%);
+    box-shadow: 5px 5px 10px #ffffff;
+    transform: translate(-2%, -2%);
 }
 
 .inner-box:active {
     box-shadow: 0px 0px 0px;
-    transform: translateY(0%);
+    transform: translate(0%);
 }
 
 #list-box-1 {
