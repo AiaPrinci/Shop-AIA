@@ -160,7 +160,7 @@ body {
 .img {
     width: 32px;
     height: 32px;
-    background-image: url('./Images/photo_2024-05-06_20-26-21.png');
+    background-image: url('./Images/icon.png');
     background-size: cover;
     border-radius: 5px;
     cursor: pointer;
