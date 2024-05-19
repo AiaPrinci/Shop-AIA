@@ -261,13 +261,13 @@ let shopItems = [{
      price: '200$',
      color: 'Blue and White',
      image: 'Images\blackshirt.png'},
-     {whatIsIt:'CoolBlackShirt',
+     {whatIsIt:'Cool Black Shirt',
      new: true,
      price: '300$',
      color: 'black',
      image: 'Images\whiteshirt.png'
      },
-     {whatIsIt:'CoolWhiteShirt(with no painting)',
+     {whatIsIt:'White Shirt For Blacks',
      new: true,
      price: '150$',
      color: 'white',
@@ -298,3 +298,13 @@ shirtTypeBlack.innerHTML += shopItems[1].whatIsIt;
 newTypeBlack.innerHTML += shopItems[1].new;
 priceBlack.innerHTML += shopItems[1].price;
 colorBlack.innerHTML += shopItems[1].color;
+
+let shirtTypeRacism = document.getElementById('shirt-type-1-racism');
+let newTypeRacism = document.getElementById('new-type-2-racism');
+let priceRacism = document.getElementById('price-3-racism');
+let colorRacism = document.getElementById('color-4-racism');
+
+shirtTypeRacism.innerHTML += shopItems[2].whatIsIt;
+newTypeRacism.innerHTML += shopItems[2].new;
+priceRacism.innerHTML += shopItems[2].price;
+colorRacism.innerHTML += shopItems[2].color;
