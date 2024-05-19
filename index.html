@@ -7,6 +7,7 @@
     <link rel="icon" type="image.png" href="./Images/icon1.png">
     <link rel="stylesheet" href="./Css/style.css">
     <link rel="stylesheet" href="./Css/loader.css">
+    <link rel="stylesheet" href="./Css/burgerMenu.css">
 </head>
 <body>
     <div class="loader">
@@ -22,7 +23,7 @@
             </div>
         </div>
     </div>
-    <div class="burger-onclick" id="burger-onclick">
+    <!-- <div class="burger-onclick" id="burger-onclick">
         <div class="burger-onclick-menu">
             <ul class="burger-onclick-list">
                 <a href="./index.html">
@@ -51,7 +52,10 @@
                 </li>
             </ul>
         </div>
-    </div>
+    </div> -->
+    <!-- <div class="burgerMenuButtonContainer">
+        <div class="burgerMenuButton " style="background-color: black;"></div>
+    </div> -->
     <div class="scroll-container" id="scroll-container">
         <a href="#header" class="scroll" id="scroll">
             <?xml version="1.0" encoding="iso-8859-1"?>
@@ -283,19 +287,39 @@
                     </div>
                     <button class="shop">SHOP</button>
                 </div>
-                <div class="burger-menu" id="burger-menu">
-                    <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                <!-- <div class="burger-menu" id="burger-menu">
+                    <?xml version="1.0" encoding="utf-8"?>
                     <svg id="burger" width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M4 18L20 18" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
                         <path d="M4 12L20 12" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
                         <path d="M4 6L20 6" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
                     </svg>
+                </div> -->
+                <div class="burgerMenuButtonContainer">
+                    <div class="burgerMenuButton " style="background-color: rgb(255, 255, 255);"></div>
                 </div>
             </div>
             <div class="header-text">
                 <h1>SHOP AIA</h1>
             </div>
         </header>
+        <div class="burgerMenuContainer" style="width: 0px;">
+            <nav>
+                <ul>
+                    <li>main</li>
+                    <li>categories</li>
+                    <!-- <ul>
+                        <li>clothes</li>
+                        <li>shoes</li>
+                        <li>accesories</li>
+                    </ul> -->
+                    <a href="#about">
+                        <li>about</li>
+                    </a>
+                    <li>help</li>
+                </ul>
+            </nav>
+        </div>
         <main>
             <section>
                 <div class="about" id="about">
@@ -497,5 +521,6 @@
     <script src="./scripts/script.js"></script>
     <script src="./scripts/preLoader.js"></script>
     <script src="./scripts/fetcheddata.js"></script>
+    <script src="./scripts/burgerMenu.js"></script>
 </body>
 </html>

@@ -102,17 +102,17 @@ let box4 = document.getElementById('box-4');
 //      clothePic.style.backgroundPosition = 'center';
 // });
 
-let burger = document.getElementById('burger');
-let burgerOnclick = document.getElementById('burger-onclick');
-let burgerMenu = document.getElementById('burger-menu');
+// let burger = document.getElementById('burger');
+// let burgerOnclick = document.getElementById('burger-onclick');
+// let burgerMenu = document.getElementById('burger-menu');
 
-const myFunction = () => { 
-     burgerOnclick.style.display = (burgerOnclick.style.display == "flex") ? "none" : "flex";
-}
+// const myFunction = () => { 
+//      burgerOnclick.style.display = (burgerOnclick.style.display == "flex") ? "none" : "flex";
+// }
 
-burgerMenu.addEventListener('click', () => {
-     myFunction();
-})
+// burgerMenu.addEventListener('click', () => {
+//      myFunction();
+// })
 // let listBox1 = document.getElementById('list-box-1');
 // let listBox2 = document.getElementById('list-box-2');
 // let listBox3 = document.getElementById('list-box-3');
@@ -182,22 +182,22 @@ burgerMenu.addEventListener('click', () => {
 //      color.innerHTML = 'Color:  '
 // })
 
-let categoriesOnclick = document.getElementById('burger-onclick-li-categories');
-let burgerOnclickSpan = document.getElementById('burger-onclick-categories-span');
+// let categoriesOnclick = document.getElementById('burger-onclick-li-categories');
+// let burgerOnclickSpan = document.getElementById('burger-onclick-categories-span');
 
-let burgerOnclickList = document.getElementById('burger-onclick-in-ul-container');
-burgerOnclickList.style.display = 'none';
+// let burgerOnclickList = document.getElementById('burger-onclick-in-ul-container');
+// burgerOnclickList.style.display = 'none';
 
 
-categoriesOnclick.addEventListener('mouseenter', () => {
-     burgerOnclickList.style.display = 'flex';
-     burgerOnclickSpan.innerHTML = '-';
-});
+// categoriesOnclick.addEventListener('mouseenter', () => {
+//      burgerOnclickList.style.display = 'flex';
+//      burgerOnclickSpan.innerHTML = '-';
+// });
 
-categoriesOnclick.addEventListener('mouseleave', () => {
-     burgerOnclickList.style.display = 'none';
-     burgerOnclickSpan.innerHTML = '+';
-});
+// categoriesOnclick.addEventListener('mouseleave', () => {
+//      burgerOnclickList.style.display = 'none';
+//      burgerOnclickSpan.innerHTML = '+';
+// });
 
 // categoriesOnclick.addEventListener('click', () => {
 //      burgerOnclickList.style.display = 'flex';
