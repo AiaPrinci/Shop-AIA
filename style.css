@@ -11,6 +11,35 @@
     scroll-behavior: smooth;
 }
 
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333333;
+    transition: opacity 0.75s, visibility 0.75s;
+    z-index: 999999999999999999999999999999999999999999999999999999999999999999999;
+  }
+  
+  .loader--hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: rgb(36, 1, 68);
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+  }
+
 .scroll-container {
     display: flex;
     height: 100vh;
@@ -949,6 +978,16 @@ body {
     background-position: center;
 }
 
+@keyframes loading {
+    from {
+      transform: rotate(0turn);
+    }
+    to {
+      transform: rotate(1turn);
+    }
+  }
+  
+
 @keyframes boxBounce {
     0%,20%,40%,60%,80%,to {
         animation-timing-function: cubic-bezier(.215,.61,.355,1);
@@ -982,7 +1021,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 769px), (max-width: 1024px) {
+@media only screen and (max-width: 769px){
 
     .image-box {
         height: 100%;
