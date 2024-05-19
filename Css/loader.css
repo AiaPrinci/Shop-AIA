@@ -111,8 +111,35 @@ body {
   background-image: linear-gradient(45deg, #3f3251 2%, #002025 100%);
 }
 
-@keyframes rotate { 0% { transform: rotate(0deg);} 100% { transform: rotate(360deg);}}
+@keyframes rotate { 
+    0% { 
+        transform: rotate(0deg);
+    } 
+    100% { 
+        transform: rotate(360deg);
+    }
+}
 
-@keyframes fade { 0% { opacity: 1;} 50% { opacity: 0.25;}}
+@keyframes fade { 
+    0% { 
+        opacity: 1;
+    } 
+    50% { 
+        opacity: 0.25;
+    }
+}
 
-@keyframes fade-in { 0% { opacity: 0;} 100% { opacity: 1;}}
+@keyframes fade-in { 
+    0% { 
+        opacity: 0;
+    } 
+    100% { 
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .loader {
+        z-index: 999999999999999999999999999999999;
+    }
+}

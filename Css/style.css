@@ -1003,7 +1003,6 @@ body {
     .header-container {
         width: 90%;
         justify-content: space-between;
-        z-index: 999999999999999999999999999999999999;
     }   
 
     .header-text {
