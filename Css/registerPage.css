@@ -107,6 +107,12 @@ body {
     padding-top: 30px;
 }
 
+.registration-form form p {
+    font-size: 13px;
+    color: rgb(133, 133, 133);
+    cursor: pointer;
+}
+
 .input {
     width: 80%;
     height: 45px;
@@ -158,4 +164,50 @@ input:focus {
 .button:active {
     box-shadow: 0px 0px 0px #8676cd70;
     transform: translate(0, 0);
+}
+
+.users {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #0000009a;
+    z-index: 1;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.users-container {
+    width: 500px;
+    height: 800px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.users-header {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 5px 20px -15px #ffbf0f;
+}
+
+.x-container {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.x-container:hover {
+    background-color: #1b1b1b94;
+}
+
+#x {
+    cursor: pointer;
 }
