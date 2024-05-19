@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
             burgerMenuContainer.style.width = '0px';
             burgerMenuButtonContainer.classList.remove('active');
         }else{
-            burgerMenuContainer.style.width = '163px';
+            burgerMenuContainer.style.width = '160px';
             burgerMenuButtonContainer.classList.add('active');
         }
     })

@@ -1214,9 +1214,10 @@ body {
         top: 0;
         right: 0;
         width: fit-content;
-        height: 100vh;
+        height: 500px;
         transition: all .6s;
         overflow: hidden;
+        border-bottom-left-radius: 10px;
     }
     .burgerMenuContainer ul {
         display: flex;
