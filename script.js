@@ -212,16 +212,26 @@ categoriesOnclick.addEventListener('mouseleave', () => {
 let clothesBoxEd = document.querySelector('#clothes-box-1');
 let imageBox = document.getElementById('image-box-1');
 let imageBox2 = document.getElementById('image-box-2');
+let imageBox3 = document.getElementById('image-box-3');
+let imageBox4 = document.getElementById('image-box-4');
 let clothesBox2 = document.getElementById('clothes-box-2');
+let clothesBox3 = document.getElementById('clothes-box-3');
+let clothesBox4 = document.getElementById('clothes-box-4');
 
 let moreInfoClothesBtn = document.getElementById('more-info');
 let moreInfoClothes = document.getElementById('more-info-clothes');
 let moreInfoClothes2 = document.getElementById('more-info-clothes-1');
+let moreInfoClothes3 = document.getElementById('more-info-clothes-1-1');
+let moreInfoClothes4 = document.getElementById('more-info-clothes-1-1-1');
+moreInfoClothes3.style.display = 'none';
 moreInfoClothes2.style.display = 'none';
 moreInfoClothes.style.display = 'none';
+moreInfoClothes4.style.display = 'none';
 let moreInfoClothesMainContent = document.getElementById('more-info-clothes-main-content');
 let x = document.getElementById('x');
 let x1 = document.getElementById('x-1');
+let x2 = document.getElementById('x-2');
+let x3 = document.getElementById('x-3');
 
 clothesBoxEd.addEventListener('click', () => {
      moreInfoClothes.style.display = 'flex';
@@ -231,12 +241,28 @@ clothesBox2.addEventListener('click', () => {
      moreInfoClothes2.style.display = 'flex';
 })
 
+clothesBox3.addEventListener('click', () => {
+     moreInfoClothes3.style.display = 'flex';
+})
+
+clothesBox4.addEventListener('click', () => {
+     moreInfoClothes4.style.display = 'flex';
+})
+
 x.addEventListener('click', () => {
      moreInfoClothes.style.display = 'none';
 })
 
 x1.addEventListener('click', () => {
      moreInfoClothes2.style.display = 'none';
+})
+ 
+x2.addEventListener('click', () => {
+     moreInfoClothes3.style.display = 'none';
+})
+
+x3.addEventListener('click', () => {
+     moreInfoClothes4.style.display = 'none';
 })
 
 clothesBoxEd.addEventListener('mouseover', () => {
@@ -255,28 +281,40 @@ clothesBox2.addEventListener('mouseleave', () => {
      imageBox2.style.scale = '1';
 })
 
+clothesBox3.addEventListener('mouseenter', () => {
+     imageBox3.style.scale = '1.15';
+});
+
+clothesBox3.addEventListener('mouseleave', () => {
+     imageBox3.style.scale = '1';
+})
+
+clothesBox4.addEventListener('mouseenter', () => {
+     imageBox4.style.scale = '1.15';
+})
+
+clothesBox4.addEventListener('mouseleave', () => {
+     imageBox4.style.scale = '1';
+})
+
 let shopItems = [{
      whatIsIt:'Cool T-Shirt',
      new: true,
      price: '200$',
-     color: 'Blue and White',
-     image: 'Images\blackshirt.png'},
+     color: 'Blue and White',},
      {whatIsIt:'Cool Black Shirt',
      new: true,
      price: '300$',
      color: 'black',
-     image: 'Images\whiteshirt.png'
      },
      {whatIsIt:'White Shirt For Blacks',
      new: true,
-     price: '150$',
-     color: 'white',
-     image: 'Images\white.png'},
-     {whatIsIt:'CoolestWhiteShirt',
+     price: 'Free',
+     color: 'white'},
+     {whatIsIt:'Red T-Shirt',
      new: true,
-     price: '300$',
-     color: 'White',
-     image: 'Images\white1.png'}]
+     price: '10$',
+     color: 'Red',}]
 ;
 
 let shirtType1 = document.getElementById('shirt-type-1');
@@ -308,3 +346,13 @@ shirtTypeRacism.innerHTML += shopItems[2].whatIsIt;
 newTypeRacism.innerHTML += shopItems[2].new;
 priceRacism.innerHTML += shopItems[2].price;
 colorRacism.innerHTML += shopItems[2].color;
+
+let shirtTypeRed = document.getElementById('shirt-type-1-red');
+let newTypeRed = document.getElementById('new-type-2-red');
+let priceRed = document.getElementById('price-3-red');
+let colorRed = document.getElementById('color-4-red'); 
+
+shirtTypeRed.innerHTML += shopItems[3].whatIsIt;
+newTypeRed.innerHTML += shopItems[3].new;
+priceRed.innerHTML += shopItems[3].price;
+colorRed.innerHTML += shopItems[3].color;
