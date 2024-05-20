@@ -385,7 +385,7 @@ body {
     border-radius: 4px;
     position: absolute;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(45, 45, 45) 90%);
-    z-index: 998;
+    z-index: 15;
 }
 
 .employee-container {
@@ -540,7 +540,7 @@ body {
 }
 
 .clothes-box {
-    width: 1080px;
+    width: 300px;
     height: 600px;
     background-color: #fff;
     display: flex;
@@ -1203,7 +1203,6 @@ body {
 
     .clothes {
         border-radius: 0px;
-        
     }
 
     .clothe-list {
@@ -1234,14 +1233,13 @@ body {
 
     .burgerMenuContainer{
         position: fixed;
-        background-color: rgba(51, 51, 51, 0.6);
+        background-color: rgba(51, 51, 51, 0.897);
         top: 0;
         right: 0;
         width: fit-content;
         height: 100vh;
         transition: all .6s;
         overflow: hidden;
-        border-bottom-left-radius: 10px;
         z-index: 20;
     }
     .burgerMenuContainer ul {
