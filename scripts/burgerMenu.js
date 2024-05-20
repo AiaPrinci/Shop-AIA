@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const burgerMenuContainer = document.querySelector('.burgerMenuContainer');
 
     burgerMenuContainer.style.width = '0px';
-    burgerMenuContainer.style.paddingTop = '70px';
+    burgerMenuContainer.style.paddingTop = '90px';
 
     burgerMenuButtonContainer.addEventListener('click' , ()=>{
         if(burgerMenuButtonContainer.classList.contains('active')){
