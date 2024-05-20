@@ -1026,6 +1026,7 @@ body {
         height: 64px;
         box-shadow: 0px 0px 0px;
         position: fixed;
+        background-position: center;
     }   
 
     .header-text {
@@ -1058,7 +1059,7 @@ body {
     }
     
     .about {
-        height: 3000px;
+        height: 2500px;
     }
 
     .about-container {
@@ -1075,13 +1076,13 @@ body {
     .about-grid {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        width: 300px;
+        width: 90%;
         height: 1500px;
         gap: 10px;
     }
 
     .gradient-div {
-        width: 298px;
+        width: 335.5px;
     }
 
     #first-box {
@@ -1198,6 +1199,11 @@ body {
         height: 40px;
         display: flex;
         align-items: center;
+    }
+
+    .clothes {
+        border-radius: 0px;
+        
     }
 
     .clothe-list {
