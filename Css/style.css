@@ -3,6 +3,11 @@
     src: url('../Fonts/HitmarkerCondensed-Light.ttf');
 }
 
+@font-face {
+    font-family: Minecraft;
+    src: url('../Fonts/MinecraftRegular-Bmg3.otf');
+}
+
 
 * { 
     margin: 0;
@@ -707,31 +712,30 @@ body {
     background-position: center;
 }
 
-.more-info-container {
+.minecraft-container {
     display: flex;
     justify-content: center;
 }
 
-.more-info {
+.minecraft {
     height: 50px;
     width: 200px;
     border-radius: 5px;
     border: none;
     cursor: pointer;
-    background-color: #4d4d4d;
+    background-image: url('../Images/Minecraft.png');
+    background-size: cover;
     color: #fff;
     transition: all 0.3s;
     filter: drop-shadow(2px 2px 10px #000);
-    font-family: Hitmarker;
-    letter-spacing: 2px;
+    font-family: Minecraft;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.more-info:hover {
-    outline: 1px solid #4d4d4d;
-    outline-offset: 4px;
+.minecraft:hover {
+    scale: 1.1;
 }
 
 .more-info-clothes {
@@ -954,6 +958,10 @@ body {
 }
 
 .burgerMenuButtonContainer {
+    display: none;
+}
+
+#nav {
     display: none;
 }
 
@@ -1214,7 +1222,7 @@ body {
     }
 
     .burgerMenuContainer{
-        position: fixed;
+        position: absolute;
         background-color: black;
         top: 0;
         right: 0;
@@ -1269,5 +1277,9 @@ body {
     }
     .burgerMenuButtonContainer.active .burgerMenuButton{
         opacity: 0;
+    }
+
+    #nav {
+        display: flex;
     }
 }

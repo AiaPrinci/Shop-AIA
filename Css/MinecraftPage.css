@@ -1,0 +1,15 @@
+@font-face {
+    font-family: Minecraft;
+    src: url('../Fonts/MinecraftRegular-Bmg3.otf');
+}
+
+* {
+    font-family: Minecraft;
+    color: #fff;
+}
+
+body {
+    background-image: url('../Images/Screenshot\ \(198\).png');
+    background-size: cover;
+    background-position: center;
+}
