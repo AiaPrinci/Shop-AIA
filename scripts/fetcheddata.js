@@ -5,10 +5,22 @@ const fetchedData = () => {
         fetch('https://jsonplaceholder.typicode.com/users')
             .then(response => response.json())
             .then((data) => {
-                // text.innerHTML += data[1].name;
+                
+                const names = data[1];
                 data.forEach(user => {
-                    console.log(user.name);
+                    
+                    // text.innerHTML += names;
+                    // console.log(names);
+                    // console.log(user);
                 });
+
+                console.log(names);
+                text.innerHTML += `${names.name} - `;
+                text.innerHTML += `${names.phone} - `;
+                text.innerHTML += `${names.address.city} - `;
+                // text.innerHTML += names.name;
+                // text.innerHTML += names.name;
+                // text.innerHTML += names.name;
             })
 
             .catch();
