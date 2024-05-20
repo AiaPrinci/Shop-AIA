@@ -38,7 +38,7 @@ body {
     width: 45%;
     background-image: url('../Images/gif.png');
     background-size: cover;
-    background-position: center;
+    background-position: left;
     clip-path: polygon(0 0,0 100%,90% 100%,100% 0);
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -243,5 +243,12 @@ input:focus {
     to {
         opacity: 1;
         transform: scaleZ(1);
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .registration {
+        width: 90%;
+        height: 500px;
     }
 }
