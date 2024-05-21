@@ -1246,7 +1246,7 @@ body {
     }
 
     .arrow-left {
-        left: 1em;
+        left: 30px;
     }
 
     .arrow-right {
@@ -1281,7 +1281,8 @@ body {
 
     .burgerMenuContainer{
         position: fixed;
-        background-color: rgba(51, 51, 51, 0.897);
+        /* background-color: rgba(51, 51, 51, 0.897); */
+        background-color: #000000c1;
         top: 0;
         right: 0;
         width: fit-content;
