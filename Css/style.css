@@ -83,7 +83,7 @@ a {
 
 ::-webkit-scrollbar {
     width: 8px;
-  }
+}
   
 
   ::-webkit-scrollbar-track {
@@ -520,7 +520,6 @@ body {
 
 .clothes-container {
     width: 100%;
-    height: 800px;
     background-color: #ffffff9f;
     backdrop-filter: blur(8px);
     display: flex;
@@ -710,32 +709,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-}
-
-.minecraft-container {
-    display: flex;
-    justify-content: center;
-}
-
-.minecraft {
-    height: 50px;
-    width: 200px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    background-image: url('../Images/Minecraft.png');
-    background-size: cover;
-    color: #fff;
-    transition: all 0.3s;
-    filter: drop-shadow(2px 2px 10px #000);
-    font-family: Minecraft;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.minecraft:hover {
-    scale: 1.1;
 }
 
 .more-info-clothes {
@@ -965,6 +938,11 @@ body {
     display: none;
 }
 
+.arrow-left,
+.arrow-right {
+        display: none;
+    }
+
 @keyframes boxBounce {
     0%,20%,40%,60%,80%,to {
         animation-timing-function: cubic-bezier(.215,.61,.355,1);
@@ -1000,6 +978,22 @@ body {
 
 @media (max-width: 769px){
 
+    ::-webkit-scrollbar {
+        width: 1px;
+    }
+      
+    
+      ::-webkit-scrollbar-track {
+        background-color: #1b1b1b;
+        border-radius: 10px;
+      }
+    
+      ::-webkit-scrollbar-thumb {
+        background: rgb(46, 0, 77); 
+        border-radius: 10px;
+      }
+      
+
     .image-box {
         height: 100%;
         width: 100%;
@@ -1014,7 +1008,7 @@ body {
     }
 
     .header {
-        height: 100vh;
+        height: 100%;
     }
     
     .header-container {
@@ -1059,14 +1053,15 @@ body {
     }
     
     .about {
-        height: 2500px;
+        height: auto;
     }
 
     .about-container {
-        height: 3000px;
+        height: 100%;
         width: 100%;
         flex-direction: column;
         align-items: center;
+        padding-bottom: 100px;
     }
 
     .about-header {
@@ -1208,17 +1203,32 @@ body {
     .clothes-container {
         width: 100vw;
         position: relative;
+        overflow:hidden;
+        padding-block:12px 30px;
+        padding-inline:16px;
+        width: calc(100% + 16px);
+        -webkit-margin-start: -16px;
+        margin-inline-start:-16px;-webkit-margin-before: -12px;
+        margin-block-start:-12px;
     }
 
     .main-content {
         position: absolute;
         top: 0;
         left: 0;
-        width: 400%;
+        width: auto;
+        /* max-width: 400%; */
         height: 100%;
-        justify-content: left;
-        gap: 55px;
-        padding-left: 37px;
+        /* display: flex;
+        justify-content: center; */
+        /* gap: 55px; */
+        /* padding-left: 37px; */
+        position: relative;
+        height: 100%;
+        transition-property: transform;
+        box-sizing: content-box;
+        transform: translate3d(0px, 0px, 0px);
+        transition-duration: 0ms;
     }
 
     .arrow-left,
@@ -1232,6 +1242,7 @@ body {
         border-radius: 50%;
         color: #fff;
         cursor: pointer;
+        display: block;
     }
 
     .arrow-left {
@@ -1274,7 +1285,7 @@ body {
         top: 0;
         right: 0;
         width: fit-content;
-        height: 100vh;
+        height: 100%;
         transition: all .6s;
         overflow: hidden;
         z-index: 20;

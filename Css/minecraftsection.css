@@ -1,0 +1,32 @@
+.minecraft-section {
+    width: 100%;
+    height: auto;
+    background-image: url('../Images/pack_3530346.png');
+}
+
+.minecraft-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.minecraft-button {
+    height: 50px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-image: url('../Images/Minecraft.png');
+    background-size: cover;
+    color: #fff;
+    transition: all 0.3s;
+    filter: drop-shadow(2px 2px 10px #000);
+    font-family: Minecraft;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.minecraft:hover {
+    scale: 1.1;
+}
+
