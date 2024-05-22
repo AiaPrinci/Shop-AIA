@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Minecraft;
+    src: url('../Fonts/MinecraftRegular-Bmg3.otf');
+}
+
 .minecraft-section {
     width: 100%;
     height: auto;
@@ -30,3 +35,14 @@
     scale: 1.1;
 }
 
+.minecraft-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-family: Minecraft;
+}
+
+.minecraft-header h1 {
+    text-shadow: 0px 0px 10px #000;
+}

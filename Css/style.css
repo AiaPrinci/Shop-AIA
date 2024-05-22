@@ -507,12 +507,13 @@ body {
 }
 
 .clothes {
-    height: 1200px;
+    height: auto;
     background-color: rgba(36, 1, 68, 0.853);
     display: flex;
     flex-direction: column;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
+    padding-bottom: 200px;
 }
 
 .clothes-text {
