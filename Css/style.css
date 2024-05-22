@@ -1021,6 +1021,7 @@ body {
         box-shadow: 0px 0px 0px;
         position: fixed;
         background-position: center;
+        padding: 5px 10px;
     }   
 
     .header-text {
@@ -1327,6 +1328,7 @@ body {
         background-color: rgb(255, 255, 255);
         margin: 3px 0px;
         transition: all .4s;
+        border-radius: 2px;
     }
     .burgerMenuButtonContainer.active:before{
         transform: rotate(45deg) translateY(6px) translateX(7px);
@@ -1340,5 +1342,19 @@ body {
 
     #nav {
         display: flex;
+    }
+
+    .more-info-clothes-main-content {
+        width: 95%;
+        height: 95%;
+    }
+
+    .inner-box {
+        width: 100px;
+        height: 100px;
+    }
+
+    .main-info-text-container {
+        height: 90%;
     }
 }
