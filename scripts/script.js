@@ -2,22 +2,19 @@ let categories = document.getElementById('categories-id');
 let categoriesSpan = document.getElementById('categories-span');
 
 let inUl = document.getElementById('in-ul-container');
-inUl.style.display = 'none';
+// inUl.style.display = 'none';
 let inLi = document.getElementById('clothes');
 
 categories.addEventListener('mouseenter', () => {
-     inUl.style.display = 'flex';
+     // inUl.style.display = 'flex';
      categoriesSpan.innerHTML = '-';
+     inUl.style.height = inUl.scrollHeight + 'px';
 });
 
 categories.addEventListener('mouseleave', () => {
-     inUl.style.display = 'none';
+     // inUl.style.display = 'none';
      categoriesSpan.innerHTML = '+';
-});
-
-categories.addEventListener('click', () => {
-     inUl.style.display = 'flex';
-     categoriesSpan.innerHTML = '-';
+     inUl.style.height = '0px';
 });
 
 let mainBranch = document.getElementById('second-box');

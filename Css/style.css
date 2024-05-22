@@ -198,12 +198,29 @@ body {
 }
 
 #in-ul-container {
-    position: absolute;
+    /* position: absolute; */
+    display: flex;
+    background-color: #ffffff36;
+    color: #fff;
     flex-direction: column;
-    justify-content: center;
-    width: 150px;
-    height: 150px;
-    background-color: rgba(88, 87, 87, 0.711);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform:translateX(-50%);
+    overflow: hidden;
+    height: 0px;
+    transition: all .5s;
+}
+
+#categories-id {
+    width: 110px;
+    color: inherit;
+    display: flex;
+    padding: 0px 20px;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    transition: all .1s;
 }
 
 #in-ul-container li {
