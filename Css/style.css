@@ -284,6 +284,11 @@ body {
     outline-offset: 4px;
 }
 
+.shop:active {
+    outline: 1px solid red;
+    outline-offset: 1px;
+}
+
 .about {
     height: 1100px;
     background-color: #1b1b1b;
@@ -1096,7 +1101,7 @@ body {
     }
 
     .gradient-div {
-        max-width: 380px;
+        max-width: 100%;
     }
 
     #first-box {
