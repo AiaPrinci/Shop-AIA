@@ -198,10 +198,8 @@ body {
 }
 
 #in-ul-container {
-    /* position: absolute; */
     display: flex;
-    background-color: #ffffff36;
-    color: #fff;
+    background-color: #ffffff9b;
     flex-direction: column;
     position: absolute;
     top: 100%;
@@ -210,6 +208,7 @@ body {
     overflow: hidden;
     height: 0px;
     transition: all .5s;
+    width: 100%;
 }
 
 #categories-id {
@@ -225,10 +224,12 @@ body {
 
 #in-ul-container li {
     cursor: pointer;
+    color: #000;
 }
 
 #in-ul-container li:hover {
-    background-color: rgba(51, 51, 51, 0.6);
+    background-color: rgba(51, 51, 51, 0.861);
+    color: #fff;
 }
 
 #clothes {
