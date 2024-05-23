@@ -199,7 +199,7 @@ body {
 
 #in-ul-container {
     display: flex;
-    background-color: #ffffff9b;
+    background-color: rgba(51, 51, 51, 0.861);
     flex-direction: column;
     position: absolute;
     top: 100%;
@@ -224,12 +224,12 @@ body {
 
 #in-ul-container li {
     cursor: pointer;
-    color: #000;
+    color: #fff;
 }
 
 #in-ul-container li:hover {
-    background-color: rgba(51, 51, 51, 0.861);
-    color: #fff;
+    background-color: #ffffff9b;
+    color: #000;
 }
 
 #clothes {
