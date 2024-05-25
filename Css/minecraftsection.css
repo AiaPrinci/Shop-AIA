@@ -135,7 +135,6 @@
     color: #fff;
     display: flex;
     align-items: center;
-    gap: 200px;
     background-color: #00000000;
     padding: 10px;
     backdrop-filter: blur(8px);
@@ -148,12 +147,17 @@
 }
 
 .info-text p span {
-    background: url('../Images/pack_3530346.png') no-repeat center center;
+    background-image: url('../Images/pack_3530346.png');
     background-size: cover;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
     -moz-background-clip:text;
+}
+
+.info-text p span::selection {
+    background-color: #fff;
+    -webkit-text-fill-color: #000;
 }
 
 .minecraft-li p {
