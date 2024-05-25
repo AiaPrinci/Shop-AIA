@@ -57,7 +57,6 @@
 
 .minecraft-header {
     width: 100%;
-    /* background-image: url('../Images/pack_3530346.png'); */
     background-color: #00000000;
     backdrop-filter: blur(8px);
     display: flex;
@@ -87,7 +86,9 @@
 .gaming-div {
     width: 500px;
     height: 500px;
-    background-image: url('../Images/Minecraft.png');
+    /* background-image: url('../Images/Minecraft.png'); */
+    background-image: url('../Images/Screenshot\ \(233\).png');
+    background-size: cover;
     background-position: center;
     transform:
     perspective(800px)
