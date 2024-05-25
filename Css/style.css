@@ -572,7 +572,7 @@ body {
     flex-direction: column;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
-    padding-bottom: 200px;
+    padding-bottom: 20px;
 }
 
 .clothes-text {
@@ -1099,7 +1099,7 @@ body {
       }
       
       :root {
-        --clr: #7a00c0;
+        --clr: #3b007e;
       }
       
       .text {
@@ -1107,6 +1107,8 @@ body {
         -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
         transition: 0.1s ease;
         transition-delay: 0.25s;
+        font-family: Rubik;
+        font-weight: bold;
       }
       
       .hover-text {
@@ -1117,11 +1119,13 @@ body {
         overflow: hidden;
         border-right: 6px solid var(--clr);
         transition: 0.5s ease-in-out;
+        font-family: Rubik;
+        font-weight: bold;
       }
       
       .div:hover .hover-text {
         width: 100%;
-        filter: drop-shadow(0 0 40px var(--clr));
+        filter: drop-shadow(0 0 20px var(--clr));
       }
       .div:hover .text {
         -webkit-text-stroke: 1px rgba(255, 255, 255, 0);
