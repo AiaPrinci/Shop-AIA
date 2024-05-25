@@ -181,7 +181,7 @@ body {
 
 .header-text {
     position: absolute;
-    height: 1000px;
+    height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -1063,6 +1063,12 @@ body {
     to {
         opacity: 1;
         transform: scaleZ(1);
+    }
+}
+
+@media only screen and (max-width: 1025px) {
+    .header-container {
+        width: 90%;
     }
 }
 

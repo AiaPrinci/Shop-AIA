@@ -200,6 +200,7 @@
     .minecraft-header h1 {
         text-align: center;
         font-size: 70px;
+        gap: 100px;
     }
 
     .gaming-div {
