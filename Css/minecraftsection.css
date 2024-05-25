@@ -223,6 +223,10 @@
         font-size: 30px;
     }
 
+    .minecraft-button-black {
+        display: none;
+    }
+
     .minecraft-list {
         align-items: center;
     }
