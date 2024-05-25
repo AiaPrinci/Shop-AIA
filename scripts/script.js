@@ -356,6 +356,27 @@ colorRed.innerHTML += shopItems[3].color;
 
 let headerContainer = document.getElementById('header-container');
 
-document.addEventListener('scroll', () => {
-     headerContainer.classList.add('scroll-down');
-})
+// document.addEventListener('scroll', () => {
+//      headerContainer.classList.add('scroll-down');
+// })
+
+var scrollableElement = document.body; //document.getElementById('scrollableElement');
+
+scrollableElement.addEventListener('wheel', checkScrollDirection);
+
+function checkScrollDirection(event) {
+  if (checkScrollDirectionIsUp(event)) {
+    headerContainer.style.marginTop = '16px';
+    headerContainer.style.borderRadius = '5px';
+  } else {
+    headerContainer.style.marginTop = '0px';
+    headerContainer.style.borderRadius = '0px';
+  }
+}
+
+function checkScrollDirectionIsUp(event) {
+  if (event.wheelDelta) {
+    return event.wheelDelta > 0;
+  }
+  return event.deltaY < 0;
+}

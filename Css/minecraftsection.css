@@ -66,7 +66,6 @@
     font-size: 6em;
     height: auto;
     align-items: center;
-    gap: 100px;
 }
 
 .minecraft-text {
@@ -86,7 +85,6 @@
 .gaming-div {
     width: 500px;
     height: 500px;
-    /* background-image: url('../Images/Minecraft.png'); */
     background-image: url('../Images/Screenshot\ \(233\).png');
     background-size: cover;
     background-position: center;
@@ -94,20 +92,20 @@
     perspective(800px)
     rotateY(25deg) scale(0.9)
     rotateX(10deg);
-  filter: blur(2px);
-  opacity: 0.5;
-  transition: 0.6s ease all;
+    filter: blur(2px);
+    opacity: 0.5;
+    transition: 0.6s ease all;
 
-  &:hover {
-    transform:
-      perspective(800px)
-      rotateY(-15deg)
-      translateY(-50px)
-      rotateX(10deg)
-      scale(1);
-    filter: blur(0);
-    opacity: 1;
-  }
+    &:hover {
+        transform:
+        perspective(800px)
+        rotateY(-15deg)
+        translateY(-50px)
+        rotateX(10deg)
+        scale(1);
+        filter: blur(0);
+        opacity: 1;
+    }
 }
 
 .minecraft-info-container {

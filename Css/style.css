@@ -82,7 +82,9 @@ a {
 }
 
 ::selection {
-    background: rgba(51, 51, 51, 0.6);
+    /* background: rgba(51, 51, 51, 0.6); */
+    background: #fff;
+    color: #000;
 }
 
 
@@ -130,9 +132,10 @@ body {
     transition: all 0.3s;
   }
   
-  :root {
-    --clr: #3b007e;;
-  }
+:root {
+    --clr: #3b007e;
+    animation: name 5s infinite;
+}
   
   .text {
     color: transparent;
@@ -213,6 +216,11 @@ body {
 .scroll-down {
     margin-top: 0px;
     border-radius: 0px;
+}
+
+.scroll-up {
+    margin-top: 16px;
+    border-radius: 5px;
 }
 
 .left-side {
@@ -1022,8 +1030,8 @@ body {
 
 .arrow-left,
 .arrow-right {
-        display: none;
-    }
+    display: none;
+}
 
 @keyframes boxBounce {
     0%,20%,40%,60%,80%,to {
