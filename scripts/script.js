@@ -353,3 +353,9 @@ shirtTypeRed.innerHTML += shopItems[3].whatIsIt;
 newTypeRed.innerHTML += shopItems[3].new;
 priceRed.innerHTML += shopItems[3].price;
 colorRed.innerHTML += shopItems[3].color;
+
+let headerContainer = document.getElementById('header-container');
+
+document.addEventListener('scroll', () => {
+     headerContainer.classList.add('scroll-down');
+})

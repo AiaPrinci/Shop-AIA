@@ -113,11 +113,51 @@ body {
     width: 100%;
     background-color: #1b1b1b;
 }
+ 
+
+.div {
+    position: relative;
+    font-size: 10rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 10rem;
+    cursor: pointer;
+  }
+  
+  :root {
+    --clr: #ffe01a;
+  }
+  
+  .text {
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
+    transition: 0.1s ease;
+    transition-delay: 0.25s;
+  }
+  
+  .hover-text {
+    position: absolute;
+    inset: 0;
+    width: 0%;
+    color: var(--clr);
+    overflow: hidden;
+    border-right: 6px solid var(--clr);
+    transition: 0.5s ease-in-out;
+  }
+  
+  .div:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 40px var(--clr));
+  }
+  .div:hover .text {
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0);
+  }
+  
 
 .header {
     display: flex;
     justify-content: center;
-    height: 1000px;
+    height: 100vh;
     background-image: url('../Images/Screenshot\ \(198\).png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -156,6 +196,12 @@ body {
     box-shadow: 5px 5px 20px;
     justify-content: space-between;
     z-index: 1;
+    position: fixed;
+}
+
+.scroll-down {
+    margin-top: 0px;
+    border-radius: 0px;
 }
 
 .left-side {
@@ -1031,6 +1077,44 @@ body {
     .scroll {
         display: none;
     }
+
+    .div {
+        position: relative;
+        font-size: 3rem;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        line-height: 3rem;
+        cursor: pointer;
+      }
+      
+      :root {
+        --clr: #ffe01a;
+      }
+      
+      .text {
+        color: transparent;
+        -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
+        transition: 0.1s ease;
+        transition-delay: 0.25s;
+      }
+      
+      .hover-text {
+        position: absolute;
+        inset: 0;
+        width: 0%;
+        color: var(--clr);
+        overflow: hidden;
+        border-right: 6px solid var(--clr);
+        transition: 0.5s ease-in-out;
+      }
+      
+      .div:hover .hover-text {
+        width: 100%;
+        filter: drop-shadow(0 0 40px var(--clr));
+      }
+      .div:hover .text {
+        -webkit-text-stroke: 1px rgba(255, 255, 255, 0);
+      }
 
     .header {
         height: 100%;
