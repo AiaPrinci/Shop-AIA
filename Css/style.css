@@ -8,6 +8,11 @@
     src: url('../Fonts/MinecraftRegular-Bmg3.otf');
 }
 
+@font-face {
+    font-family: Rubik;
+    src: url('../Fonts/Rubik-VariableFont_wght.ttf');
+}
+
 
 * { 
     margin: 0;
@@ -122,10 +127,11 @@ body {
     letter-spacing: 3px;
     line-height: 10rem;
     cursor: pointer;
+    transition: all 0.3s;
   }
   
   :root {
-    --clr: #ffe01a;
+    --clr: #3b007e;;
   }
   
   .text {
@@ -133,6 +139,8 @@ body {
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
     transition: 0.1s ease;
     transition-delay: 0.25s;
+    font-family: Rubik;
+    font-weight: bold;
   }
   
   .hover-text {
@@ -143,6 +151,9 @@ body {
     overflow: hidden;
     border-right: 6px solid var(--clr);
     transition: 0.5s ease-in-out;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
+    font-family: Rubik;
+    font-weight: bold;
   }
   
   .div:hover .hover-text {
@@ -1088,7 +1099,7 @@ body {
       }
       
       :root {
-        --clr: #ffe01a;
+        --clr: #7a00c0;
       }
       
       .text {
