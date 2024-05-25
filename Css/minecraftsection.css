@@ -119,27 +119,71 @@
     height: 100%;
     display: flex;
     justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .minecraft-list {
     width: auto;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
 .minecraft-li {
     font-family: Minecraft;
     color: #fff;
     display: flex;
+    align-items: center;
+    gap: 200px;
+    background-color: #00000000;
+    padding: 10px;
+    backdrop-filter: blur(8px);
+    box-shadow: 5px 5px 15px #000;
+}
+
+.info-text {
+    width: 500px;
+    height: 100%;
+}
+
+.info-text p span {
+    background: url('../Images/pack_3530346.png') no-repeat center center;
+    background-size: cover;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+    -moz-background-clip:text;
+}
+
+.minecraft-li p {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
 }
 
 .li-image {
     width: 500px;
     height: 500px;
     background-color: #fff;
+    border-radius: 5px;
 }
 
 #li-image-1 {
     background-image: url('../Images/playMinecraft\ \(2\).png');
+    background-size: cover;
+    background-position: center;
+}
+
+#li-image-2 {
+    background-image: url('../Images/withfriends.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#li-image-3 {
+    background-image: url('../Images/multiplayer.png');
     background-size: cover;
     background-position: center;
 }
