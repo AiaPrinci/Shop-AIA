@@ -162,69 +162,9 @@ clothesBox4.addEventListener('mouseleave', () => {
      imageBox4.style.scale = '1';
 })
 
-let shopItems = [{
-     whatIsIt:'Cool T-Shirt',
-     new: true,
-     price: '200$',
-     color: 'Blue and White',},
-     {whatIsIt:'Cool Black Shirt',
-     new: true,
-     price: '300$',
-     color: 'black',
-     },
-     {whatIsIt:'White Shirt For Blacks',
-     new: true,
-     price: 'Free',
-     color: 'white'},
-     {whatIsIt:'Red T-Shirt',
-     new: true,
-     price: '10$',
-     color: 'Red',}]
-;
-
-let shirtType1 = document.getElementById('shirt-type-1');
-let newType2 = document.getElementById('new-type-2');
-let price3 = document.getElementById('price-3');
-let color4 = document.getElementById('color-4');
-
-shirtType1.innerHTML += shopItems[0].whatIsIt;
-newType2.innerHTML += shopItems[0].new;
-price3.innerHTML += shopItems[0].price;
-color4.innerHTML += shopItems[0].color;
-
-let shirtTypeBlack = document.getElementById('shirt-type-1-black');
-let newTypeBlack = document.getElementById('new-type-2-black');
-let priceBlack = document.getElementById('price-3-black');
-let colorBlack = document.getElementById('color-4-black');
-
-shirtTypeBlack.innerHTML += shopItems[1].whatIsIt;
-newTypeBlack.innerHTML += shopItems[1].new;
-priceBlack.innerHTML += shopItems[1].price;
-colorBlack.innerHTML += shopItems[1].color;
-
-let shirtTypeRacism = document.getElementById('shirt-type-1-racism');
-let newTypeRacism = document.getElementById('new-type-2-racism');
-let priceRacism = document.getElementById('price-3-racism');
-let colorRacism = document.getElementById('color-4-racism');
-
-shirtTypeRacism.innerHTML += shopItems[2].whatIsIt;
-newTypeRacism.innerHTML += shopItems[2].new;
-priceRacism.innerHTML += shopItems[2].price;
-colorRacism.innerHTML += shopItems[2].color;
-
-let shirtTypeRed = document.getElementById('shirt-type-1-red');
-let newTypeRed = document.getElementById('new-type-2-red');
-let priceRed = document.getElementById('price-3-red');
-let colorRed = document.getElementById('color-4-red'); 
-
-shirtTypeRed.innerHTML += shopItems[3].whatIsIt;
-newTypeRed.innerHTML += shopItems[3].new;
-priceRed.innerHTML += shopItems[3].price;
-colorRed.innerHTML += shopItems[3].color;
-
 let headerContainer = document.getElementById('header-container');
 
-var scrollableElement = document.body; //document.getElementById('scrollableElement');
+var scrollableElement = document.body;
 
 scrollableElement.addEventListener('wheel', checkScrollDirection);
 
@@ -244,3 +184,76 @@ function checkScrollDirectionIsUp(event) {
   }
   return event.deltaY < 0;
 }
+
+let scroll = document.getElementById('scroll');
+
+const scrolling = () => {
+     scroll.style.opacity = '0.0';
+     scroll.style.transition = 'all 0.3s';
+}
+
+scroll.addEventListener('click', () => {
+     scrolling();
+});
+
+document.addEventListener('wheel' , () => {
+     scroll.style.opacity = '1';
+});
+
+let controllerMoreInfo = document.querySelectorAll('.controller-more-info');
+
+controllerMoreInfo.forEach((controllers) => {
+     controllers.style.display = 'none';
+});
+
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+let moreInfoController = document.getElementById('more-info-controller');
+let controller = document.getElementById('controller-box-5');
+let x5 = document.getElementById('x-5');
+
+let moreInfoController1 = document.getElementById('more-info-controller-1');
+let controller1 = document.getElementById('controller-box-6');
+let x6 = document.getElementById('x-6');
+
+let moreInfoController2 = document.getElementById('more-info-controller-1-1');
+let controller2 = document.getElementById('controller-box-7');
+let x7 = document.getElementById('x-7');
+
+let moreInfoController3 = document.getElementById('more-info-controller-1-1-1');
+let controller3 = document.getElementById('controller-box-8');
+let x8 = document.getElementById('x-8');
+
+controller.addEventListener('click', () => {
+     moreInfoController.style.display = 'flex';
+});
+
+x5.addEventListener('click', () => {
+     moreInfoController.style.display = 'none';
+});
+
+controller1.addEventListener('click', () => {
+     moreInfoController1.style.display = 'flex';
+})
+
+x6.addEventListener('click', () => {
+     moreInfoController1.style.display = 'none';
+})
+
+controller2.addEventListener('click', () => {
+     moreInfoController2.style.display = 'flex';
+})
+
+x7.addEventListener('click', () => {
+     moreInfoController2.style.display = 'none';
+})
+
+controller3.addEventListener('click', () => {
+     moreInfoController3.style.display = 'flex';
+});
+
+x8.addEventListener('click', () => {
+     moreInfoController3.style.display = 'none';
+})
+
+
