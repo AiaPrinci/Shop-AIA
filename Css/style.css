@@ -1187,11 +1187,12 @@ body {
 
     .div {
         position: relative;
-        font-size: 3rem;
+        font-size: 3.5rem;
         text-transform: uppercase;
         letter-spacing: 3px;
         line-height: 3rem;
         cursor: pointer;
+        text-align: center;
       }
       
       :root {
@@ -1248,11 +1249,6 @@ body {
         height: 100vh;
         display: flex;
         align-items: center;
-    }
-
-    .header-text h1 {
-        font-size: 40px;
-        text-align: center;
     }
 
     .burger-menu {
