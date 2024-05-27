@@ -58,15 +58,15 @@ arrLeft.addEventListener('click', () => {
         slides.forEach(slide => {
             slide.style.order = 'initial';
         })
-        sliders.forEach(slide => {
-            slide.style.order = 'initial';
+        sliders.forEach(slider => {
+            slider.style.order = 'initial';
         })
         slideDecrement = slides.length - 1;
         slideDecrement = sliders.length -1;
     }
 
     slides[slideDecrement].style.order = '-1';
-    sliders[slideDecrement].style.order = '1';
+    sliders[slideDecrement].style.order = '-1';
 
     container.style.left = -offset + 'px';
 
