@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 @font-face {
     font-family: Hitmarker;
     src: url('../Fonts/HitmarkerCondensed-Light.ttf');
@@ -1108,6 +1110,10 @@ body {
 .arrow-right {
     display: none;
 }
+
+
+
+  
 
 @keyframes boxBounce {
     0%,20%,40%,60%,80%,to {

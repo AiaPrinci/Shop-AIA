@@ -10,7 +10,8 @@
     background: #333333;
     transition: all 0.75s;
     z-index: 999999999999999999999999999999999999999999999999999999999999999999999;
-}
+    transition: all .3s;
+  }
 
 .loader--hidden {
     opacity: 0;
@@ -42,10 +43,6 @@ body {
       font-size: 0;
     }
   }
-}
-
-* {
-  transition: all .3s;
 }
 
 

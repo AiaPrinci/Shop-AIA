@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+@font-face {
+    font-family: Hitmarker;
+    src: url('../Fonts/HitmarkerCondensed-Light.ttf');
+}
+
+@font-face {
+    font-family: Minecraft;
+    src: url('../Fonts/MinecraftRegular-Bmg3.otf');
+}
+
+@font-face {
+    font-family: Rubik;
+    src: url('../Fonts/Rubik-VariableFont_wght.ttf');
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.footer-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.wrapper {
+    display: inline-flex;
+    list-style: none;
+  }
+  
+  .wrapper .icon {
+    position: relative;
+    background: #ffffff;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+.wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+  
+.wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.wrapper .icon:hover svg {
+    fill: #fff;
+    transition: all 0s;
+}
+  
+  .wrapper .icon:hover span,
+  .wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.facebook {
+  --color: #1877f2;
+}
+.twitter {
+  --color: #1da1f2;
+}
+.instagram {
+  --color: #e4405f;
+}
+.github {
+  --color: #333333;
+}
+.youtube {
+  --color: #cd201f;
+}
+  
+.icon:hover,
+.icon:hover .tooltip,
+.icon:hover .tooltip::before {
+  background: var(--color);
+  color: white;
+}
+
+.footer-img {
+    width: 64px;
+    height: 64px;
+    background-image: url('../Images/icon.png');
+    background-size: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.footer h1 {
+  font-family: Hitmarker;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+@media only screen and (max-width: 769px) {
+    .footer-container {
+      flex-direction: column;
+    }
+}
