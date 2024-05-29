@@ -60,13 +60,15 @@ const animation = () => {
      sideElement.style.transition = 'all 0.3s';
 }
 
-setTimeout(() => {
-     animation();
-}, 4500);
-
-setTimeout(() => {
-     sideElement.remove();
-}, 5000);
+window.addEventListener('load', () => {
+     setTimeout(() => {
+          animation();
+     }, 4500);
+     
+     setTimeout(() => {
+          sideElement.remove();
+     }, 5000);
+})
 
 let clothePic = document.getElementById('clothe-pic');
 let box1 = document.getElementById('box-1');

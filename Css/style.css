@@ -1036,6 +1036,52 @@ body {
     background-size: cover;
 }
 
+#controller {
+    background-image: url('../Images/ps5controller.png');
+    background-size: cover;
+}
+
+#controller1 {
+    background-image: url('../Images/ps5inner.png');
+    background-size: cover;
+}
+
+#controller2 {
+    background-image: url('../Images/ps5omm.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#controller3 {
+    background-image: url('../Images/ps5io.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#controllerps5 {
+    background-image: url('../Images/DualSense-1.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#controllerps4 {
+    background-image: url('../Images/PlayStation-5-DualSense-Controller-Propped-Up-scaled.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#controllerps3 {
+    background-image: url('../Images/0.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#controllerps2 {
+    background-image: url('../Images/DualSense-1.png');
+    background-size: cover;
+    background-position: center;
+}
+
 .main-info-text-container {
     width: 100%;
     height: 100%;
