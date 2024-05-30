@@ -68,7 +68,7 @@ window.addEventListener('load', () => {
      setTimeout(() => {
           sideElement.remove();
      }, 5000);
-})
+});
 
 let clothePic = document.getElementById('clothe-pic');
 let box1 = document.getElementById('box-1');
